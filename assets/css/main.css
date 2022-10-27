@@ -3318,6 +3318,7 @@ input, select, textarea {
 			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 			transition: opacity 1s ease, transform 1s ease;
 			opacity: 1.0;
+
 		}
 
 		.wrapper.fade-up.inactive > .inner,
@@ -3907,3 +3908,46 @@ input, select, textarea {
 			}
 
 		}
+
+
+
+
+
+/*pic*/
+@media screen and (max-width: 980px) {
+
+
+	}
+
+@media screen and (max-width: 736px) {
+
+
+	}
+
+@media screen and (max-width: 100%) {
+
+
+
+	}
+	
+@media screen and (max-width: 1680px){
+
+} 
+.prof{
+		display: flex;
+		justify-content: space-between;
+		padding-left: 2rem;
+	}
+
+
+.profimage{
+	height: 2rem;
+	padding-right: 2rem;
+	
+	/*display: flex;*/
+	/*position: relative;*/
+	/*border-radius: 20rem;*/
+	/*padding-left: 10rem;*/
+	/*background-size: cover;*/
+
+}
