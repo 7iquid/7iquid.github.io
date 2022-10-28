@@ -23,7 +23,7 @@
 							<li><a href="#intro">Profile</a></li>
 							<!-- <li><a href="#one">Project Created</a></li> -->
 							<li><a href="#two">My Code</a></li>
-							<!-- <li><a href="#three">Get in touch</a></li> -->
+							<li><a href="#three">Get in touch</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -152,31 +152,40 @@
 					</section>
 
 				<!-- Three  Get in touch-->
-					<!-- <section id="three" class="wrapper style1 fade-up">
+					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
+
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<p>You may contact me and offer a project.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+							<style>
+							  .hide { position:absolute; top:-1px; left:-1px; width:1px; height:1px; }
+							</style>
+							<iframe name="hiddenFrame" class="hide"></iframe>
+									<form method="post" action="http://localhost:3000/api/email"
+										enctype="multipart/form-data"
+										target="hiddenFrame"
+									>
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
 												<input type="text" name="name" id="name" />
 											</div>
 											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<label for="email">Email*</label>
+												<input type="email" name="email" id="email" required/>
 											</div>
 											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
+												<label for="message">Message*</label>
+												<textarea name="message" id="message" rows="5" required></textarea>
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<input type="submit">
 										</ul>
 									</form>
+
 								</section>
 								<section>
 									<ul class="contact">
@@ -194,7 +203,7 @@
 											<h3>Cell:</h3>
 											<span>(+63) 0931-015-8517</span>
 										</li>
-										<li>
+<!-- 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
 												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -203,12 +212,12 @@
 												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 											</ul>
-										</li>
+										</li> -->
 									</ul>
 								</section>
 							</div>
 						</div>
-					</section> -->
+					</section>
 
 			</div>
 
