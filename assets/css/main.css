@@ -2491,15 +2491,15 @@ input, select, textarea {
 	}
 
 		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
+			/*-moz-osx-font-smoothing: grayscale;*/
+			/*-webkit-font-smoothing: antialiased;*/
 			display: inline-block;
 			font-style: normal;
 			font-variant: normal;
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			/*font-family: 'Font Awesome 5 Free';*/
 			font-weight: 400;
 		}
 
@@ -2512,12 +2512,12 @@ input, select, textarea {
 		}
 
 		.icon.solid:before {
-			font-weight: 900;
+			font-weight: 2;
 		}
 
-		.icon.brands:before {
+/*		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
-		}
+		}*/
 
 		.icon.major {
 			width: 2.5em;
@@ -2525,7 +2525,7 @@ input, select, textarea {
 			display: block;
 			background: #ffffff;
 			border-radius: 100%;
-			color: #312450;
+			/*color: #312450;*/
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
