@@ -162,13 +162,21 @@
 							<style>
 							  .hide { position:absolute; top:-1px; left:-1px; width:1px; height:1px; }
 							</style>
+							<!-- action="https://ktc-node-backend.herokuapp.com/api/email" -->
 							<iframe name="hiddenFrame" class="hide"></iframe>
-									<form method="post" action="https://ktc-node-backend.herokuapp.com/api/email"
+
+<!-- FORMS -->
+									<form method="post" 
+										action="https://ktc-node-backend.herokuapp.com/api/email"
 										enctype="multipart/form-data"
 										target="hiddenFrame"
 										id="emailsform"
-										onsubmit="clearKo()"
-									>
+										onsubmit="
+										 	this.submit(); 
+										 	this.reset(); 
+										 	alert('Message sent please wait for our response thank you');
+										 	return false; "
+										>
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -187,12 +195,8 @@
 											<input type="submit">
 										</ul>
 									</form>
-									<script>
-										function clearKo() {
-										  document.getElementById("emailsform").reset();
-										  alert("forms sent please your email");
-										}
-									</script>
+
+
 								</section>
 								<section>
 									<ul class="contact">
