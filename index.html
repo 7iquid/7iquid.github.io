@@ -166,6 +166,8 @@
 									<form method="post" action="https://ktc-node-backend.herokuapp.com/api/email"
 										enctype="multipart/form-data"
 										target="hiddenFrame"
+										id="emailsform"
+										onsubmit="clearKo()"
 									>
 										<div class="fields">
 											<div class="field half">
@@ -185,7 +187,12 @@
 											<input type="submit">
 										</ul>
 									</form>
-
+									<script>
+										function clearKo() {
+										  document.getElementById("emailsform").reset();
+										  alert("forms sent please your email");
+										}
+									</script>
 								</section>
 								<section>
 									<ul class="contact">
