@@ -1,23 +1,58 @@
 <template>
-  <div>
-    <h2>About</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam
-      minima unde nemo harum quam maxime optio quos corrupti. Eum sapiente
-      facere nemo, laborum ullam non cum fuga quas eveniet harum molestiae minus
-      atque vel ratione illo quia, iure commodi dicta porro excepturi quam.
-      Facere, commodi corrupti ipsam neque totam reprehenderit laboriosam
-      laborum veniam est quo, repellat saepe impedit labore?
-    </p>
-  </div>
+  <v-app id="inspire">
+    <v-app-bar class="px-3" color="white" flat density="compact">
+      <v-avatar color="grey-darken-1" size="32"></v-avatar>
+
+      <v-spacer></v-spacer>
+
+      <v-tabs centered color="grey-darken-2">
+        <v-tab v-for="link in links" :key="link">
+          {{ link }}
+        </v-tab>
+      </v-tabs>
+      <v-spacer></v-spacer>
+
+      <v-avatar
+        class="hidden-sm-and-down"
+        color="grey-darken-1"
+        size="32"
+      ></v-avatar>
+    </v-app-bar>
+
+    <v-main class="bg-grey-lighten-3">
+      <v-container>
+        <v-row>
+          <v-col cols="12" sm="2">
+            <v-sheet rounded="lg" min-height="268">
+              <!--  -->
+            </v-sheet>
+          </v-col>
+
+          <v-col cols="12" sm="8">
+            <v-sheet min-height="70vh" rounded="lg">
+              <!--  -->
+            </v-sheet>
+          </v-col>
+
+          <v-col cols="12" sm="2">
+            <v-sheet rounded="lg" min-height="268">
+              <!--  -->
+            </v-sheet>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
-<style scoped>
-h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
+<script setup>
+const links = ['Dashboard', 'Messages', 'Profile', 'Updates']
+</script>
+
+<script>
+export default {
+  data: () => ({
+    links: ['Dashboard', 'Messages', 'Profile', 'Updates'],
+  }),
 }
-p {
-  margin: 20px 0;
-}
-</style>
+</script>
