@@ -19,7 +19,7 @@ export default defineNuxtConfig({
 
   // build for node production
   build: {
-    transpile: ['vuetify'],
+    transpile: ['vuetify', 'gsap'],
   },
   modules: [
     // ...
