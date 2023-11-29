@@ -1,5 +1,7 @@
 #!/bin/bash
 
+nuxi generate
+
 if [ ! -d '.portfolio' ]; then
   echo 'creating: folder .portfolio'
   mkdir .portfolio && cd .portfolio
