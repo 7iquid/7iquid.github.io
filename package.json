@@ -11,8 +11,7 @@
     "lint:prettier": "prettier --check .",
     "lint": "npm lint:js && npm lint:prettier",
     "lintfix": "prettier --write --list-different . && npm lint:js --fix",
-    "generate-portfolio": "nuxi generate && cd 7iquid.github.io && cp -r ../.output/public/* .",
-    "build-portfolio": "git clone https://github.com/7iquid/7iquid.github.io.git"
+    "build-portfolio": "bash build-scripts/migrate_portfolio.sh"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
