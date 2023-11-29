@@ -1,33 +1,31 @@
 <template>
-  <v-app id="inspire">
-    <v-main class="bg-grey-lighten-3">
-      <v-container>
-        <v-row>
-          <v-col cols="12" sm="2">
-            <v-sheet rounded="lg" min-height="268">
-              <!--  -->
-            </v-sheet>
-          </v-col>
+  <Title>Tavie</Title>
+  <Meta name="description" content="portfolio" />
 
-          <v-col cols="12" sm="8">
-            <v-sheet min-height="70vh" rounded="lg">
-              <!--  -->
-              <slot />
-            </v-sheet>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-sheet rounded="lg" min-height="268">
-              <!--  -->
-            </v-sheet>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-main>
-  </v-app>
+  <link
+    href="https://fonts.googleapis.com/css?family=Exo:400,900"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <Background>
+    <NuxtWelcome></NuxtWelcome>
+  </Background>
 </template>
 
 <script setup>
+const title = ref('Tavie')
+const description = ref('portfolio')
+
+useHead({
+  title,
+  meta: [
+    {
+      name: 'description',
+      content: description,
+    },
+  ],
+})
+
 const links = [
   {
     path: 'home',
@@ -51,3 +49,15 @@ export default {
   }),
 }
 </script> -->
+<style>
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url('/src/profile/unnamed-PhotoRoom.png-PhotoRoom.png'); /* Replace with your image path */
+  background-color: rgb(99, 21, 172);
+  background-position: right bottom;
+}
+</style>

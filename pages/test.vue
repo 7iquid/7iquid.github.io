@@ -2,8 +2,14 @@
 import { onMounted, onUnmounted, ref } from 'vue'
 import gsap from 'gsap'
 
-definePageMeta({
-  title: 'Toggle Boxes',
+useHead({
+  title: 'bio',
+  meta: [
+    {
+      name: 'description',
+      content: 'bio',
+    },
+  ],
 })
 
 const main = ref()

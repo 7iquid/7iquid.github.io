@@ -16,3 +16,12 @@ footer {
   padding: 1rem;
 }
 </style>
+
+<script>
+import backgroundImagePath from '~/src/profile/profile.png'
+export default {
+  data() {
+    return { backgroundImagePath }
+  },
+}
+</script>

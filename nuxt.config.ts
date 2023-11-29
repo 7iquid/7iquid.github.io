@@ -21,10 +21,8 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify', 'gsap'],
   },
-  modules: [
-    // ...
-    '@nuxtjs/tailwindcss',
-  ],
+  modules: [// ...
+  '@nuxtjs/tailwindcss', '@hypernym/nuxt-anime'],
 
   // build static html file
   nitro: {
