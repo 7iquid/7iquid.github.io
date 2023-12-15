@@ -1,1 +1,0 @@
-import{M as u}from"./entry.07a5d6c1.js";function t(){return{parseMenuTitle:function(e){return typeof e=="function"?e(u()):e||""},parseMenuRoute:function(e){return typeof e=="function"?e(u()):e}}}export{t as u};
