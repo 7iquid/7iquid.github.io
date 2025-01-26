@@ -1,0 +1,1 @@
+import{U as u}from"./entry.bf47e341.js";function t(){return{parseMenuTitle:function(e){return typeof e=="function"?e(u()):e||""},parseMenuRoute:function(e){return typeof e=="function"?e(u()):e}}}export{t as u};
