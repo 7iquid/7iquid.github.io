@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper.c27b6911.js";import{o,c as r,s}from"./entry.924d1443.js";const c={},n={class:"card-content px-6 py-6 relative"};function a(e,_){return o(),r("div",n,[s(e.$slots,"default")])}const f=t(c,[["render",a]]);export{f as default};

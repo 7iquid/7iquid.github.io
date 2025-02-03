@@ -1,0 +1,1 @@
+import{f as s,o,c as a,s as n,d as r,t as l}from"./entry.924d1443.js";const c={class:"text-2xl font-semibold mb-2"},p=s({__name:"Title",props:{text:{type:String,default:""}},setup(t){return(e,d)=>(o(),a("div",c,[n(e.$slots,"default",{},()=>[r(l(t.text),1)])]))}});export{p as default};
