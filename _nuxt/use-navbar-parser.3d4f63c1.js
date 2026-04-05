@@ -1,0 +1,1 @@
+import{Y as u}from"./entry.b972c40d.js";function t(){return{parseMenuTitle:function(e){return typeof e=="function"?e(u()):e||""},parseMenuRoute:function(e){return typeof e=="function"?e(u()):e}}}export{t as u};
