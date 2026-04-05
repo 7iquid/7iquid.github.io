@@ -1,0 +1,1 @@
+import{f as a,o as s,c as n,H as r,a as o,t as c}from"./entry.d23e0851.js";const l={class:"flex items-center justify-center px-4 py-2 text-center hover:bg-gray-700/[0.5] active:bg-gray-700/[0.5]"},f=a({__name:"ItemButton",props:{text:{type:String,default:""}},setup(e){return(t,p)=>(s(),n("div",l,[r(t.$slots,"default",{},()=>[o("span",null,c(e.text),1)])]))}});export{f as _};
