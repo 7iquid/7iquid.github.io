@@ -1,1 +1,0 @@
-import{_ as r}from"./_plugin-vue_export-helper.c27b6911.js";import{o,c as a,I as d}from"./entry.6814f8ff.js";const t={},c={class:"flex flex-col divide-y divide-gray-400 rounded-lg bg-gray-400/[0.5] backdrop-blur-lg dark:divide-gray-700 dark:bg-gray-700/[0.5]"};function n(e,s){return o(),a("div",c,[d(e.$slots,"default")])}const i=r(t,[["render",n]]);export{i as default};
