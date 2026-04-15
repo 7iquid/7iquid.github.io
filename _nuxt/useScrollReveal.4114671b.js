@@ -1,1 +1,0 @@
-import{z as e,A as r,Y as a}from"./entry.c904c35c.js";function g(o,t={}){e(()=>{r(()=>{const{$gsap:n}=a();n.from(o,{scrollTrigger:{trigger:o,start:"top 80%",toggleActions:"play none none none"},opacity:0,y:50,duration:.8,stagger:.15,...t})})})}export{g as u};
